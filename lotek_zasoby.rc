@@ -1,0 +1,30 @@
+#include <windows.h>
+#include "lotek_dodatek.h"
+
+IKONA ICON "zasoby/ikona5.ico"
+KURSOR CURSOR "zasoby/kursor.cur"
+LOGO BITMAP "zasoby/logo1.bmp"
+
+MOJDIALOG DIALOG DISCARDABLE 160, 40, 150, 200
+STYLE DS_MODALFRAME | WS_POPUP
+CAPTION "O programie"
+FONT 8, "MS Sans Serif"
+{
+ LTEXT "Easy Lotek przeprowadza symulacjê lotto",-1,5,5,180,10
+ LTEXT "* w oknie GRA wybierz grê",-1,5,25,180,10
+ LTEXT "* w oknie ILE LOSOWAN wpisz liczbe",-1,5,35,180,10
+ LTEXT "  z zakresu 1-9999999",-1,5,45,180,10
+ LTEXT "* w oknie LICZBY wybierz odpowiednio",-1,5,55,180,10
+ LTEXT "  5 lub 6 liczb",-1,5,65,180,10
+ LTEXT "* wcisnij przycisk Losuj (wielokrotnie)",-1,5,75,180,10
+ LTEXT "* obserwuj wyniki trafien i licznik",-1,5,85,180,10
+ LTEXT "* w razie potrzeby u¿yj Reset i zacznij",-1,5,95,180,10
+ LTEXT "  od poczatku",-1,5,105,180,10
+ LTEXT "********* Easy Lotek v 1.0 Freeware *************",-1,5,135,180,10
+ LTEXT "***** Autor:Marcin Modrak-Grabowski ******",-1,5,145,180,10
+ LTEXT "******** misiograbowski@gmail.com ********",-1,5,155,180,10
+ LTEXT "******************* 2012 ***********************",-1,5,165,180,10
+ //DEFPUSHBUTTON "&Fajnie!",IDOK,124,18,50,14
+ PUSHBUTTON "&OK",IDCANCEL,60,180,20,15
+}
+
